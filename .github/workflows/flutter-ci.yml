@@ -19,6 +19,9 @@ on:
 
 jobs:
   run-ci:
+    permissions:
+      actions: write
+      contents: write
     uses: ./.github/workflows/flutter-build.yml
     with:
       upload-artifact: false
